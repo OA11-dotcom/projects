@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+</head>
+
+<body>
+    
+    <div class="center">
+<div class="logo"><a href ="#"><img src="images/Navigate Logo.png"></a>
+</div>
+</div>
+    
+<header id="onlineworkshops">
+    <div class="container">
+        <div class= "nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="magazinesubscriptions.html">Magazine Subscriptions</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="onlineworkshops.html">Online Workshop</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="storiesandinterviews.html">Stories and Interviews</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    
+    </div>
+
+<h1>Book A Workshop with Navigate</h1>
+
+</header>
+
+<main>
+    <section id ="events">
+        <h1 class="section-title">Events</h1>
+        <div class="events-container"></div>
+    </section>
+
+    <section id="add-event">
+        <h1 class="section-title">New Event</h1>
+        <form class="form">
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="attendee" placeholder="Attendees">
+            <textarea id="description" cols="30" rows="10" placeholder="Description..."></textarea>
+            <select id="status">
+                <option value="0">Free</option>
+                <option value="1">Paid</option>
+            </select>
+            <button class="btn btn-primary">Save</button>
+        </form>
+    </section>
+    </main> 
+    
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+   
+    <script>
+        var firebaseConfig ={
+            apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+            authDomain: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+            databaseURL: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+            projectId: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+            storageBucket: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+            messagingSenderId:"xxxxxxxxxxxxxxxxxxxxxxxxx",
+            appId: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+    </script>
+
+    <script src ="db.js"></script>
+    <script src="app.js"></script>
+
+
+
+    
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.3.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.3.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+
+</body>
+</html>

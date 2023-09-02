@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+</head>
+
+<body>
+    <div class="center">
+<div class="logo"><a href ="#"><img src="images/Navigate Logo.png"></a>
+</div>
+</div>
+
+
+
+
+    <div class="container">
+        <div class= "nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="magazinesubscriptions.html">Magazine Subscriptions</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="onlineworkshops.html">Online Workshop</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="storiesandinterviews.html">Stories and Interviews</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    
+    </div>
+
+<div class="content-wrapper">
+    <div class="portfolio-items-wrapper">
+
+        <div class="porfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image: url(images/freestocks-_3Q3tsJ01nc-unsplash.jpg);"></div>
+            
+            <div class="img-text-wrapper">
+                <div class="subtitle">Check out the Navigate Page!</div>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image: url(images/Navigate_\ A\ lifestyle\ Magazine\ by\ Raffaella\ Daniel\ U1727974.jpg)"></div>
+            
+            <div class="img-text-wrapper">
+                <div class="subtitle">Check out the Navigate Magazine!</div>
+            </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image: url(images/estee-janssens-zni0zgb3bkQ-unsplash.jpg)"></div>
+            
+            <div class="img-text-wrapper">
+                <div class="subtitle">Book one of our Online Workshops</div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+    <br>
+    <br>
+
+
+
+    
+    
+    
+
+
+<h1>Check out some of our stories and interviews with some of our insiprational women.</h1>
+
+<div class="content-wrapper">
+    <div class="portfoilo-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+    <div class="portfolio-img-background" style="background-image: url(images/5.jpg)"></div>
+    
+    <div class="img-text-wrapper">
+        <div class="subtitle">Check Out Why We Think You Should Take Daily Walks During Lockdown</div>
+    </div>
+</div>
+
+<div class="portfolio-item-wrapper">
+    <div class="portfolio-img-background" style="background-image: url(images/34.jpg)"></div>
+    
+    <div class="img-text-wrapper">
+        <div class="subtitle">Check Out Our Interview With Suzi Keegan</div>
+    </div>
+
+    <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-background" style="background-image: url(images/27.jpg)"></div>
+        
+        <div class="img-text-wrapper">
+            <div class="subtitle">Find Out 20 Things To Do In your 20's</div>
+        </div>
+</div>
+</div>
+</div>        
+
+        
+  
+<p>Navigate believes in growth, knowledge and guidance. Navigate celebrates its readers and their journey towards growth and life-long learning.
+        Navigate seeks to help it's audience understand themselves, the world and teach them how to sail across different areas they might be struggling with.
+        Navigate will seek to do all this by curating information and knowledge into bite-sized digestible chunks that will be actionable for its audience.
+        Let Navigate be your one-stop shop for all your 20-something-questions and concerns.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+   
+</script>
+
+</html>
